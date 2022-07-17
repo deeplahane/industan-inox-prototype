@@ -1,0 +1,86 @@
+@import "../../../breakpoints.scss";
+
+.header {
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding-left: 12vw;
+  overflow: hidden;
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/landing-header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(80%);
+    z-index: -1;
+  }
+  &__title {
+    color: white;
+    font-size: 4em;
+    font-weight: 600;
+    line-height: 1.2em;
+    @include breakpoint-down(sm) {
+      font-size: 3.2em;
+    }
+  }
+  &__button {
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
+  }
+}
+
+.features {
+  @include breakpoint-down(lg) {
+    width: 100%;
+    border-radius: 0;
+  }
+  @include breakpoint-down(md) {
+    display: none;
+  }
+  display: grid;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  grid-template-columns: repeat(3, auto);
+  gap: 5rem;
+  background-color: white;
+  padding: 2rem 5% 2rem var(--content-padding);
+  border-radius: 0 5rem 0 0;
+  &__feature {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  &__title {
+    font-size: 0.9em;
+    font-weight: 500;
+  }
+  &__subtitle {
+    font-size: 0.75em;
+    font-weight: 400;
+    color: gray;
+  }
+  &__icon {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: 39px;
+    height: 39px;
+    border-radius: 0.5em;
+    background-color: var(--color-orange-light);
+  }
+}

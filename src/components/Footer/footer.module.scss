@@ -1,0 +1,74 @@
+@import "../../breakpoints.scss";
+
+.footer {
+  width: 100%;
+  padding: 0 var(--content-padding);
+  display: grid;
+  grid-template-columns: 3fr repeat(3, 1fr);
+  margin-bottom: 60px;
+  @include breakpoint-down(lg) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+  }
+  @include breakpoint-down(sm) {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  &__list {
+    list-style: none;
+    font-size: 0.9em;
+    padding-right: 1em;
+    & > li {
+      margin-bottom: 0.5em;
+    }
+  }
+  &__title {
+    font-size: 0.9em;
+    margin-bottom: 1.75em;
+    @include breakpoint-down(lg) {
+      transform: translateX(-6px);
+    }
+  }
+  &__subtitle {
+    font-size: 0.8em;
+    line-height: 175%;
+    color: gray;
+  }
+  &__logo {
+    margin-bottom: 1.5rem;
+    @include breakpoint-down(sm) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__column {
+    &--1 {
+      padding-right: 35%;
+      @include breakpoint-down(lg) {
+        padding-right: 0;
+        grid-area: 1 / 1 / 2 / 4;
+      }
+      @include breakpoint-down(sm) {
+        padding-right: 0;
+      }
+    }
+    @include breakpoint-down(lg) {
+      &--2 {
+        grid-area: 2 / 1 / 3 / 2;
+      }
+      &--3 {
+        grid-area: 2 / 2 / 3 / 3;
+      }
+    }
+  }
+  &__social-media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    @include breakpoint-down(lg) {
+      justify-content: center;
+    }
+  }
+}

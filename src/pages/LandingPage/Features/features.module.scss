@@ -1,0 +1,93 @@
+@import "../../../breakpoints.scss";
+
+.featured {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 2rem;
+  padding: 4.5rem var(--content-padding);
+  @include breakpoint-down(lg) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  @include breakpoint-down(sm) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__section {
+    position: relative;
+    height: 375px;
+    @include breakpoint-down(sm) {
+      width: 100%;
+      max-width: 350px;
+      height: 250px;
+    }
+    &--1 {
+      @include breakpoint-down(lg) {
+        grid-area: 1 / 1 / 2 / 3;
+      }
+      @include breakpoint-down(sm) {
+        grid-area: auto;
+      }
+    }
+    &--2 {
+      @include breakpoint-down(lg) {
+        grid-area: 2 / 1 / 3 / 2;
+      }
+      @include breakpoint-down(sm) {
+        grid-area: auto;
+      }
+    }
+    &--3 {
+      @include breakpoint-down(lg) {
+        grid-area: 2 / 2 / 3 / 3;
+      }
+      @include breakpoint-down(sm) {
+        grid-area: auto;
+      }
+    }
+  }
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    filter: brightness(80%);
+    z-index: -1;
+    &--1 {
+      background-image: url("/assets/featured-1.jpg");
+    }
+    &--2 {
+      background-image: url("/assets/featured-2.jpg");
+    }
+    &--3 {
+      background-image: url("/assets/featured-3.jpg");
+    }
+  }
+  &__title {
+    color: white;
+    font-weight: 400;
+    font-size: 1.4em;
+    @include breakpoint-down(md) {
+      font-size: 1.2em;
+    }
+  }
+  &__content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 3em 2.5em;
+    @include breakpoint-down(md) {
+      gap: 1.25em;
+    }
+  }
+}

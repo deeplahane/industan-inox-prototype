@@ -1,0 +1,19 @@
+@import "../../../breakpoints.scss";
+
+.links {
+  @include breakpoint-down(lg) {
+    display: none;
+  }
+  &__list {
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+  }
+  &__link {
+    color: white;
+    font-weight: 500;
+    &--black {
+      color: black;
+    }
+  }
+}

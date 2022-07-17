@@ -1,0 +1,22 @@
+.logo {
+  filter: brightness(0) invert(1);
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: auto;
+    &--standalone {
+      margin-right: 0;
+    }
+  }
+  &__title {
+    color: white;
+    font-weight: 600;
+    &--black {
+      color: black;
+    }
+  }
+  &--black {
+    filter: none;
+  }
+}

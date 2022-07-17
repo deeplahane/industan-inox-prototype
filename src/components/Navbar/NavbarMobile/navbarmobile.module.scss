@@ -1,0 +1,23 @@
+.mobile {
+  position: fixed;
+  width: 0;
+  height: 100vh;
+  background-color: white;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  transition: 0.5s width;
+  & > ul {
+    list-style: none;
+    padding: 0 1em;
+    & > li {
+      margin: 1.5em 0;
+      font-size: 1em;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+  &--open {
+    width: 250px;
+  }
+}

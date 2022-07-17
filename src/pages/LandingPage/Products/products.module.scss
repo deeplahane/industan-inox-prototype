@@ -1,0 +1,29 @@
+@import "../../../breakpoints.scss";
+
+.products {
+  margin-bottom: 150px;
+  &__titlebar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 calc(var(--content-padding) * 2);
+    margin-bottom: 65px;
+    @include breakpoint-down(sm) {
+      justify-content: center;
+    }
+  }
+  &__title {
+    font-size: 1.8em;
+    font-weight: 300;
+    @include breakpoint-down(md) {
+      font-size: 1.75em;
+    }
+    @include breakpoint-down(sm) {
+      text-align: center;
+      flex-basis: 100%;
+      font-size: 1.5em;
+      margin-bottom: 1em;
+    }
+  }
+}
