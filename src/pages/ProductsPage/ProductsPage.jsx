@@ -7,8 +7,8 @@ const ProductsPage = () => {
   const [category, setCategory] = useState("All")
   const [products, setProducts] = useState(industrialProducts);
 
-  return <div className="pt-24">
-    <h1 className="text-3xl font-semibold text-blue-700 text-center">Products</h1>
+  return <div className="pt-20">
+    <h1 className="text-3xl font-semibold text-blue-700 mb-5 text-center">Products</h1>
     <div className="max-w-7xl mx-auto p-2">
       <div className="flex gap-5">
         <div>
@@ -38,7 +38,7 @@ const ProductsPage = () => {
         </div>
 
         <div className="w-full">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:md:grid-cols-4 flex-wrap gap-3 mx-auto items-center">
+          <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:md:grid-cols-5 flex-wrap gap-3 mx-auto items-center">
 
             {
               products.map((product, index) =>
