@@ -17,11 +17,12 @@ const Product = () => {
         <div class="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
             <div class="flex w-2/5">
                 <div class="w-20">
-                    <img class="h-24" src="https://drive.google.com/uc?id=18KkAVkGFvaGNqPy2DIvTqmUH_nk39o3z" alt="" />
+                    <img class="h-24" src="https://www.thebearingcompany.co.uk/wp-content/uploads/2022/06/B-SECTION-JPEG.jpg" alt="" />
                 </div>
                 <div class="flex flex-col justify-between ml-4 flex-grow">
-                    <span class="font-bold text-sm">Iphone 6S</span>
-                    <span class="text-red-500 text-xs">Apple</span>
+                    <span class="font-bold text-sm">V BELT B-109</span>
+                    <span class=" text-xs">Yashwant Transport Service</span>
+                    <span class="text-blue-700 text-xs">BALL BEARING HOUSE</span>
                     <a href="#" class="font-semibold hover:text-red-500 text-gray-500 text-xs">Remove</a>
                 </div>
             </div>
@@ -39,8 +40,8 @@ const Product = () => {
                     </svg>
                 </button>
             </div>
-            <span class="text-center w-1/5 font-semibold text-sm">$400.00</span>
-            <span class="text-center w-1/5 font-semibold text-sm">{parseInt(400)*parseInt(pCount)}</span>
+            <span class="text-center w-1/5 font-semibold text-sm">₹ 385.48</span>
+            <span class="text-center w-1/5 font-semibold text-sm">₹ {parseInt(385.48)*parseInt(pCount)}</span>
         </div>
     )
 }
