@@ -1,7 +1,8 @@
 import React from 'react'
-
-const ProductCard = ({name, vendor, price, image, dept}) => {
+import {Link} from 'react-router-dom'
+const ProductCard = ({name, vendor, price, image, dept, index}) => {
     return (
+       <Link to={`/product/${index}`}>
         <div class="w-full min-w-fit sm:max-w-20 md:w-1/2 lg:w-1/4 ">
             <div class="drop-shadow-2xl bg-white sm:max-w-20 rounded-lg m-h-64 p-2  border border-gray-200 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
                 <figure class="mb-2 bg-white">
@@ -30,6 +31,7 @@ const ProductCard = ({name, vendor, price, image, dept}) => {
                 </div>
             </div>
         </div>
+       </Link>
     )
 }
 

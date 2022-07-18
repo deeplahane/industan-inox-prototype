@@ -33,7 +33,7 @@ const Advantages = () => {
           </div>
           <h2 className={styles["advantages__subtitle"]}>Free shipping</h2>
           <p className={styles["advantages__text"]}>
-            All purchases over $199 are eligible for free shipping via USPS
+            All purchases over ₹500 are eligible for free shipping via USPS
             First Class Mail.
           </p>
         </motion.div>

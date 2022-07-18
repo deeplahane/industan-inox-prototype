@@ -8,7 +8,7 @@ const CartPage = () => {
       <div class="flex shadow-md my-10">
         <div class="w-3/4 bg-white px-10 py-10">
           <div class="flex justify-between border-b pb-8">
-            <h1 class="font-semibold text-2xl">Shopping Cart</h1>
+            <h1 class="font-semibold text-2xl">Cart</h1>
             <h2 class="font-semibold text-2xl">3 Items</h2>
           </div>
           <div class="flex mt-10 mb-5">

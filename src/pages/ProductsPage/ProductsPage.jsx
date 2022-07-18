@@ -42,7 +42,7 @@ const ProductsPage = () => {
 
             {
               products.map((product, index) =>
-                <ProductCard key={index} name={product.name} category={product.category} price={product.price} vendor={product.vendor} image={product.mainImage} />
+                <ProductCard index={index} key={index} name={product.name} category={product.category} price={product.price} vendor={product.vendor} image={product.mainImage} />
               )
             }
 

@@ -28,9 +28,8 @@ const Header = () => {
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
-        Sale of the <br />
-        summer <br />
-        collection
+       Summer Sale <br/>
+       <span className="text-4xl">Off upto 20%</span>
       </motion.h1>
       <motion.div
         className={styles["header__button"]}
@@ -40,7 +39,7 @@ const Header = () => {
         viewport={{ once: true }}
       >
         <BsFillArrowRightCircleFill style={buttonStyle} />
-        <Link to="/" style={{ color: "white" }}>
+        <Link to="/products" style={{ color: "white" }}>
           Shop now
         </Link>
       </motion.div>

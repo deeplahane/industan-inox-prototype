@@ -28,8 +28,9 @@ const Footer = () => {
           </div>
         </a>
         <p className={styles["footer__subtitle"]}>
-          E-Shop has clothing for the young, the old & everyone in between
-          &#8211; but most importantly, for the fashionable.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+          inventore repellendus deleniti saepe voluptatem mollitia impedit amet
+          voluptas possimus recusandae!
         </p>
         <div className={styles["footer__social-media"]}>
           <a href="#">
@@ -110,8 +111,8 @@ const Footer = () => {
       >
         <h4 className={styles["footer__title"]}>Contact</h4>
         <ul className={styles["footer__list"]}>
-          <li>kiezikadrian@gmail.com</li>
-          <li>Hotline: +1 131 138 138</li>
+          <li>youremail@gmail.com</li>
+          <li>Hotline: +91 831 138 1381 </li>
         </ul>
       </motion.div>
     </div>

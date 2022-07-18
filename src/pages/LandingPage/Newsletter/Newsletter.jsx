@@ -22,7 +22,7 @@ const Newsletter = () => {
       <div className={styles["newsletter__content"]}>
         <div className={styles["newsletter__column"]}>
           <h1 className={styles["newsletter__title"]}>
-            Subscribe to our newsletter and receive exclusive offers every week
+            Subscribe to our monthly membership and receive exclusive offers every week
           </h1>
         </div>
         <div className={styles["newsletter__column"]}>

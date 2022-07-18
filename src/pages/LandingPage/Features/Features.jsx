@@ -45,7 +45,7 @@ const Features = () => {
           }
         ></div>
         <div className={styles["featured__content"]}>
-          <h2 className={styles["featured__title"]}>Basic t-shirts $29.99</h2>
+          <h2 className={styles["featured__title"]}>On sale upto ₹ 1342</h2>
           <div>
             <Button text="MORE DETAILS" />
           </div>
