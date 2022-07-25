@@ -21,7 +21,7 @@ const ProductCarousel = () => {
             <Product
               image={product.image}
               title={product.name}
-              price={"$" + product.price}
+              price={"₹" + product.price}
             />
           </SwiperSlide>
         );

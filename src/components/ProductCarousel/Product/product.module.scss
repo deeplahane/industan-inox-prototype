@@ -5,7 +5,7 @@
     width: 271px;
     height: 385px;
     object-position: top center;
-    object-fit: cover;
+    object-fit: fill;
     cursor: pointer;
     @include breakpoint-down(md) {
       width: 190px;
