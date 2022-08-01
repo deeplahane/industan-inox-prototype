@@ -28,8 +28,8 @@ const Header = () => {
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
-       Summer Sale <br/>
-       <span className="text-4xl">Off upto 20%</span>
+        Summer Sale <br />
+        <span className="text-4xl">Off upto 20%</span>
       </motion.h1>
       <motion.div
         className={styles["header__button"]}

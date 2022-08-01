@@ -1,0 +1,19 @@
+.slider_container{
+    // background-color: black;
+    padding: 1rem 0rem;
+    margin-top: 3rem;
+    // border: 1px solid red;
+}
+
+.slider_container .slider_warpper{
+    background-color: #0f1111;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+.slider_container .slider_warpper .field{
+    margin: 15px 0.7rem;
+    color: #ffffff;
+}
