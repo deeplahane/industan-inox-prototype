@@ -11,6 +11,7 @@ import SignUpPage from "./pages/SignUpPage/SignUpPage";
 import Navbar from "./components/Navbar/Navbar";
 import ContactUsPage from "./pages/ContactUsPage/ContactUsPage";
 import WhyUsPage from "./pages/WhyUsPage/WhyUsPage";
+import BestSellers from "./pages/BestSellers/BestSellers";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/products" element={<> <Navbar />  <ProductsPage /> </>} />
         <Route path="/contact-us" element={<> <Navbar />  <ContactUsPage /> </>} />
         <Route path="/why-us" element={<> <Navbar />  <WhyUsPage /> </>} />
+        <Route path="/best-sellers" element={<> <Navbar />  <BestSellers /> </>} />
 
 
         <Route path="/sign-in" element={<SignInPage />} />

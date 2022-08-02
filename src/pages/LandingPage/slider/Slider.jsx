@@ -1,11 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./slider.scss";
 
 const Slider = () => {
   return (
     <div className="slider_container">
       <div className="slider_warpper">
-        <div className="field">Best Sellers</div>
+        <Link to={"/best-sellers"}>
+          <div className="field">Best Sellers</div>
+        </Link>
         <div className="field">Today's Deals</div>
         <div className="field">Customer Service</div>
         <div className="field">Membership</div>
